@@ -1,0 +1,207 @@
+local TCS = game:GetService("TextChatService")
+local CoreGui = game:GetService("CoreGui")
+local RStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+local HttpService = game:GetService("HttpService")
+local UserInputService = game:GetService("UserInputService")
+local LocalPlayer = Players.LocalPlayer
+local PlayerGui = LocalPlayer.PlayerGui
+local isLegacy = TCS.ChatVersion == Enum.ChatVersion.LegacyChatService
+local ChatBar = CoreGui:FindFirstChild("TextBoxContainer", true) or PlayerGui:FindFirstChild("Chat"):FindFirstChild("ChatBar", true)
+ChatBar = ChatBar:FindFirstChild("TextBox") or ChatBar
+
+if game.Players.LocalPlayer.name == "Porfirey" then
+
+game.Players.LocalPlayer:Kick("fuck off u niger")
+end
+
+
+
+
+local Chat = function(Message)
+	if isLegacy then
+		local ChatRemote = RStorage:FindFirstChild("SayMessageRequest", true)
+		ChatRemote:FireServer(Message, "All")
+	else
+		local Channel = TCS.TextChannels.RBXGeneral
+		Channel:SendAsync(Message)
+	end
+end
+
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+
+
+local Window = OrionLib:MakeWindow({Name = "chat bypass", HidePremium = false, SaveConfig = true, ConfigFolder = "configs"})
+
+
+
+local Tab = Window:MakeTab({
+	Name = "Word",
+	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+	PremiumOnly = false
+})
+
+
+Tab:AddLabel("--Creator--")
+
+Tab:AddLabel("GamerPro_718")
+
+Tab:AddLabel("Youtube - @GamerPro_718")
+
+
+Tab:AddLabel("Orion libary - v3.4")
+
+Tab:AddButton({
+	Name = "ENGLISH OR SPAINSH",
+	Callback = function()
+      		Chat("ENGLISH ОR SРАІNSНl")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Whoevery move first is nigga",
+	Callback = function()
+      		Chat("Whоеvеrу mоvе fіrst іs nіɡɡа")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Slaνe",
+	Callback = function()
+      		Chat("Slаνe")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "slaνe",
+	Callback = function()
+      		Chat("slаνe")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "lіl nіɡɡа",
+	Callback = function()
+      		Chat("lіl nіɡɡа")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "lіl nіɡɡа wһаtсһu dоіnɡ",
+	Callback = function()
+      		Chat("lіl nіɡɡа wһаtсһu dоіnɡ")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Нurrу nіɡɡа",
+	Callback = function()
+      		Chat("Нurrу nіɡɡа")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "nіɡɡа",
+	Callback = function()
+      		Chat("nіɡɡа")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "ez nigga",
+	Callback = function()
+      		Chat("еz nіɡɡа")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "nigga got banned now",
+	Callback = function()
+      		Chat("nіɡɡа ɡоt bаnnеd nоw")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "LGВТQ ІS SНІТ",
+	Callback = function()
+      		Chat("LGВТQ ІS SНІТ")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "РОRN.СОМ",
+	Callback = function()
+      		Chat("РОRN.СОМ")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "ХХХ.СОМ",
+	Callback = function()
+      		Chat("ХХХ.СОМ")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "shе nіɡɡа",
+	Callback = function()
+      		Chat("shе nіɡɡа")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "LМАО",
+	Callback = function()
+      		Chat("LМАО")
+  	end    
+})
+
+local Tab2 = Window:MakeTab({
+	Name = "ABC",
+	Icon = "rbxassetid://3926305904",
+	PremiumOnly = false
+})
+
+Tab2:AddButton({
+	Name = "АВС РОRN.СОМ ІS ВЕТТЕR TO MY slaνe",
+	Callback = function()
+      		Chat("ABC + АВС  = РОRN.СОМ")
+  	end    
+})
+
+Tab2:AddButton({
+	Name = "АВС ХХХ.νіdeo.СОМ ІS ВЕТТЕR",
+	Callback = function()
+      		Chat("АВС ХХХ.νіdeo.СОМ ІS ВЕТТЕR")
+  	end    
+})
+
+Tab2:AddButton({
+	Name = "АВС РОRN.СОМ ІS ВЕТТЕR",
+	Callback = function()
+      		Chat("АВС РОRN.СОМ ІS ВЕТТЕR")
+  	end    
+})
+
+local Tab3 = Window:MakeTab({
+	Name = "shiz lol",
+	Icon = "rbxassetid://3926305904",
+	PremiumOnly = false
+})
+
+Tab3:AddButton({
+	Name = "i miss blасk ѕlаνеry",
+	Callback = function()
+      	Chat("і mіѕѕ bIасk ѕIаνеrу")
+  	end    
+})
+
+Tab3:AddButton({
+	Name = "selling slaves 10 dollars each!",
+	Callback = function()
+      	Chat("ѕеllіnɡ ѕlаνеѕ 10 dоllаrѕ еасһ!")
+  	end    
+})
